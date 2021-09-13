@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Lexend Deca, sans-serif;
+}
+
+.container {
+    width: 65%;
+    height: 50%;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.section {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.section img {
+    margin-bottom: 1.5rem;
+}
+
+.section h2 {
+    font-family: Big Shoulders Display, sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: .87rem;
+    line-height: 1.5rem;
+}
+
+.section a {
+    text-decoration: none;
+    padding: .8rem 1.8rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 5rem;
+    font-size: .8rem;
+    transition: .5s;
+}
+
+.section a:hover {
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+    box-shadow: inset 0 0 0 2px hsl(0, 0%, 95%);
+}
+
+.one a {
+    color: hsl(31, 77%, 52%);
+}
+
+.two a {
+    color: hsl(184, 100%, 22%);
+}
+
+.three a {
+    color: hsl(179, 100%, 13%);
+}
+
+.one {
+    background-color: hsl(31, 77%, 52%);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.three {
+    background-color: hsl(179, 100%, 13%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 205vh;
+    }
+
+    .container {
+        width: 90%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .section {
+        height: 100%;
+        padding: 3rem;
+    }
+
+    .section img {
+        margin-bottom: 2rem;
+    }
+
+    .section h2 {
+        font-size: 2.65rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    .section a {
+        font-size: 1rem;
+        padding: .9rem 2.2rem;
+    }
+
+    .one {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .two {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .three {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}

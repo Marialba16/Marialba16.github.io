@@ -1,0 +1,108 @@
+@media (max-width:375px) {
+    
+    body{
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        background-color:  hsl(204, 43%, 93%);
+        line-height: 1.9em;
+        width: 100%;
+        /* height: 150vh; */
+    } 
+
+    .container-card{
+        margin: 0px 30px;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        width: 85%;
+        /* height: 100%; */
+        margin: auto;
+        margin-top: 90px;
+    }
+
+    .cabecera{
+        /* background-color:white; */
+        width: auto;
+        height: auto;
+        padding: 30px 25px; 
+        /* border-radius: 5px 5px 0 0; */
+    }
+
+    .cabecera h1{
+        font-size: 1.2rem;
+    }
+
+    .span-cabecera {
+        color:hsl(71, 73%, 54%);
+        font-weight: 700;
+        font-size: .9rem;
+        line-height: 1.2rem;
+        margin-bottom: 18px;
+    }
+
+    .info-cabecera {
+        font-size: .85rem;
+    }
+    
+    .container-left{
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 30px 25px; 
+        height: auto;
+    } 
+
+    .container-left h3{
+        font-size: 1.2rem;
+    }
+
+    .span-two{
+        font-size: .5em;
+        margin-left: .6rem;
+    }
+
+    .dollar{
+        font-size: 2em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .inf{
+       font-size: 1rem;
+    }
+
+    button{
+        padding: 16px 102px;
+        border-radius: 5px ;
+        /* margin-top: 10px; */
+        align-self: center;
+    }
+    
+    button a{
+        font-size: 1.2em;
+    }
+
+    .container-right{
+        width: auto;
+        padding: 30px 25px; 
+        height: auto;
+    }
+
+    .container-right h3{
+        font-size: 1.2rem;
+    }
+
+    .container-right p{
+        margin-top: 15px;
+        font-size: .85rem;
+    }
+
+    .attribution{ 
+        font-size: 14px; 
+        padding: 30px 25px; 
+    }
+}
